@@ -28,53 +28,73 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
 			this.OrdenProduccionReport1 = new ReportesElZarzal.OrdenProduccionReport();
-			this.OrdenDeProduccionReport1 = new ReportesElZarzal.OrdenDeProduccionReport();
-			this.button1 = new System.Windows.Forms.Button();
+			this.RecuperarButton = new System.Windows.Forms.Button();
+			this.NumOPTxtBox = new System.Windows.Forms.TextBox();
+			this.OrdenLabel = new System.Windows.Forms.Label();
+			this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
 			this.SuspendLayout();
+			// 
+			// RecuperarButton
+			// 
+			this.RecuperarButton.Location = new System.Drawing.Point(195, 25);
+			this.RecuperarButton.Name = "RecuperarButton";
+			this.RecuperarButton.Size = new System.Drawing.Size(75, 23);
+			this.RecuperarButton.TabIndex = 1;
+			this.RecuperarButton.Text = "Recuperar";
+			this.RecuperarButton.UseVisualStyleBackColor = true;
+			this.RecuperarButton.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// NumOPTxtBox
+			// 
+			this.NumOPTxtBox.Location = new System.Drawing.Point(89, 25);
+			this.NumOPTxtBox.Name = "NumOPTxtBox";
+			this.NumOPTxtBox.Size = new System.Drawing.Size(100, 20);
+			this.NumOPTxtBox.TabIndex = 2;
+			// 
+			// OrdenLabel
+			// 
+			this.OrdenLabel.AutoSize = true;
+			this.OrdenLabel.Location = new System.Drawing.Point(32, 25);
+			this.OrdenLabel.Name = "OrdenLabel";
+			this.OrdenLabel.Size = new System.Drawing.Size(39, 13);
+			this.OrdenLabel.TabIndex = 3;
+			this.OrdenLabel.Text = "Orden:";
 			// 
 			// crystalReportViewer1
 			// 
-			this.crystalReportViewer1.ActiveViewIndex = 0;
+			this.crystalReportViewer1.ActiveViewIndex = -1;
+			this.crystalReportViewer1.AutoSize = true;
 			this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-			this.crystalReportViewer1.Location = new System.Drawing.Point(0, 88);
+			this.crystalReportViewer1.Location = new System.Drawing.Point(12, 64);
 			this.crystalReportViewer1.Name = "crystalReportViewer1";
-			this.crystalReportViewer1.ReportSource = this.OrdenProduccionReport1;
-			this.crystalReportViewer1.Size = new System.Drawing.Size(800, 362);
-			this.crystalReportViewer1.TabIndex = 0;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(132, 25);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Recuperar";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.crystalReportViewer1.Size = new System.Drawing.Size(893, 623);
+			this.crystalReportViewer1.TabIndex = 4;
+			this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
 			// 
 			// OrdenDeProduccionForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.button1);
+			this.ClientSize = new System.Drawing.Size(917, 699);
 			this.Controls.Add(this.crystalReportViewer1);
+			this.Controls.Add(this.OrdenLabel);
+			this.Controls.Add(this.NumOPTxtBox);
+			this.Controls.Add(this.RecuperarButton);
 			this.Name = "OrdenDeProduccionForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "OrdenDeProduccionForm";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-		private OrdenDeProduccionReport OrdenDeProduccionReport1;
 		private OrdenProduccionReport OrdenProduccionReport1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button RecuperarButton;
+		private System.Windows.Forms.TextBox NumOPTxtBox;
+		private System.Windows.Forms.Label OrdenLabel;
+		private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
 	}
 }

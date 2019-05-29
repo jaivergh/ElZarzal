@@ -39,6 +39,7 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
@@ -71,12 +72,6 @@
     <Compile Include="OrdenDeProduccionForm.Designer.cs">
       <DependentUpon>OrdenDeProduccionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdenDeProduccionReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OrdenDeProduccionReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="OrdenProduccionReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,10 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenDeProduccionForm.resx">
       <DependentUpon>OrdenDeProduccionForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrdenDeProduccionReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>OrdenDeProduccionReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenProduccionReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
