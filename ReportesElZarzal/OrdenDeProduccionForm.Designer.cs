@@ -37,7 +37,7 @@
 			// 
 			// RecuperarButton
 			// 
-			this.RecuperarButton.Location = new System.Drawing.Point(195, 25);
+			this.RecuperarButton.Location = new System.Drawing.Point(220, 23);
 			this.RecuperarButton.Name = "RecuperarButton";
 			this.RecuperarButton.Size = new System.Drawing.Size(75, 23);
 			this.RecuperarButton.TabIndex = 1;
@@ -47,19 +47,21 @@
 			// 
 			// NumOPTxtBox
 			// 
-			this.NumOPTxtBox.Location = new System.Drawing.Point(89, 25);
+			this.NumOPTxtBox.Location = new System.Drawing.Point(114, 25);
 			this.NumOPTxtBox.Name = "NumOPTxtBox";
 			this.NumOPTxtBox.Size = new System.Drawing.Size(100, 20);
 			this.NumOPTxtBox.TabIndex = 2;
+			this.NumOPTxtBox.TextChanged += new System.EventHandler(this.NumOPTxtBox_TextChanged);
 			// 
 			// OrdenLabel
 			// 
 			this.OrdenLabel.AutoSize = true;
-			this.OrdenLabel.Location = new System.Drawing.Point(32, 25);
+			this.OrdenLabel.Location = new System.Drawing.Point(12, 30);
 			this.OrdenLabel.Name = "OrdenLabel";
-			this.OrdenLabel.Size = new System.Drawing.Size(39, 13);
+			this.OrdenLabel.Size = new System.Drawing.Size(94, 13);
 			this.OrdenLabel.TabIndex = 3;
-			this.OrdenLabel.Text = "Orden:";
+			this.OrdenLabel.Text = "Numero de Orden:";
+			this.OrdenLabel.Click += new System.EventHandler(this.OrdenLabel_Click);
 			// 
 			// crystalReportViewer1
 			// 
