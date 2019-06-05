@@ -18,6 +18,7 @@ namespace ReportesElZarzal
 		SqlConnection conProcesos;
 		SqlConnection conComponentes;
 
+
 		public OrdenDeProduccionForm()
 		{
 			InitializeComponent();
